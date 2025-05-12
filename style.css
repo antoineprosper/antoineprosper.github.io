@@ -309,3 +309,29 @@ footer {
     margin: 0;
   }
 }
+
+.pub-list li, .contact-card, .cv-entry {
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  hyphens: auto;
+}
+
+.pub-list a, .contact-card a {
+  word-break: break-all;
+  display: inline-block;
+  max-width: 100%;
+}
+
+.pub-title, .pub-authors, .pub-venue {
+  display: block;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}
+
+@media (max-width: 600px) {
+  .pub-list li, .contact-card, .cv-entry {
+    padding: 1rem;
+    width: 100%;
+    box-sizing: border-box;
+  }
+}
