@@ -1,12 +1,21 @@
 :root {
-  --primary: #4b4b4b;
+  /* Header and section backgrounds */
+  --primary: #7a7a7a;
+  /* Main text color */
   --text: #e4e4e4;
+  /* Page background */
   --background: #121212;
+  /* Links and accents */
   --accent: #7cc5ff;
+  /* Card backgrounds */
   --card-bg: #1e1e1e;
-  --light-gray: #313131;
+  /* Section backgrounds and footer */
+  --light-gray: #7a7a7a;
+  /* Card borders */
   --border: #333333;
+  /* Border radius for cards and sections */
   --radius: 8px;
+  /* Shadow for cards and sections */
   --shadow: 0 2px 4px rgba(0,0,0,0.3);
 }
 
