@@ -1,10 +1,10 @@
 :root {
-  --primary: #1a1a1a;
-  --text: #ffffff;
-  --background: #0a0a0a;
+  --primary: #2d3436;
+  --text: #e4e4e4;
+  --background: #121212;
   --accent: #7cc5ff;
-  --card-bg: #1a1a1a;
-  --light-gray: #1a1a1a;
+  --card-bg: #1e1e1e;
+  --light-gray: #2d2d2d;
   --border: #333333;
   --radius: 8px;
   --shadow: 0 2px 4px rgba(0,0,0,0.3);
@@ -84,24 +84,32 @@ h2 {
 }
 
 .cv-entry {
-  margin-bottom: 1rem;
-  padding: 1rem;
+  margin-bottom: 1.5rem;
+  padding: 1.5rem;
   background: var(--card-bg);
   border-radius: var(--radius);
   box-shadow: var(--shadow);
+  border: 1px solid var(--border);
 }
 
 .cv-entry h3 {
-  margin: 0 0 0.25rem 0;
-  color: var(--text);
+  margin: 0;
   font-size: 1.1rem;
+  color: var(--text);
 }
 
 .cv-dates {
+  display: block;
   color: #999;
   font-size: 0.9rem;
-  display: block;
-  margin-bottom: 0.25rem;
+  margin: 0.25rem 0 0.5rem 0;
+}
+
+.cv-entry p {
+  margin: 0;
+  color: #999;
+  font-size: 0.95rem;
+  line-height: 1.5;
 }
 
 .pub-list {
