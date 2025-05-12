@@ -194,6 +194,17 @@ footer {
   border-radius: var(--radius) var(--radius) 0 0;
 }
 
+#contact a {
+  color: var(--accent);
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+#contact a:hover {
+  color: #a8d8ff;
+  text-decoration: underline;
+}
+
 @media (max-width: 600px) {
   header {
     padding: 1.5rem 1rem;
