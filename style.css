@@ -222,11 +222,12 @@ footer {
   gap: 1rem;
   margin-bottom: 1.5rem;
   width: 100%;
+  flex-wrap: wrap;
 }
 
 .contact-card {
   flex: 1;
-  min-width: 250px;
+  min-width: 0;
   background: var(--card-bg);
   padding: 1rem;
   border-radius: var(--radius);
