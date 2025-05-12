@@ -271,3 +271,13 @@ footer {
   margin-bottom: 0.5rem;
   display: block;
 }
+
+@media (max-width: 600px) {
+  .contact-grid {
+    flex-direction: column;
+  }
+  
+  .contact-card {
+    width: 100%;
+  }
+}
