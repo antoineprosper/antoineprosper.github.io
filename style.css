@@ -232,3 +232,42 @@ footer {
     padding: 1rem;
   }
 }
+
+.contact-grid {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.contact-card {
+  flex: 1;
+  background: var(--card-bg);
+  padding: 1rem;
+  border-radius: var(--radius);
+  border: 1px solid var(--border);
+  text-align: center;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.contact-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.4);
+}
+
+.contact-card a {
+  color: var(--text);
+  text-decoration: none;
+  display: block;
+  font-weight: 500;
+}
+
+.contact-card a:hover {
+  color: var(--accent);
+}
+
+.contact-label {
+  color: #999;
+  font-size: 0.9rem;
+  margin-bottom: 0.5rem;
+  display: block;
+}
