@@ -46,17 +46,15 @@ header h1 {
 }
 
 .tagline {
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   opacity: 0.9;
-  margin: 0.75rem 0;
-  font-weight: 300;
-  font-style: italic;
-  color: var(--accent);
-  letter-spacing: 0.5px;
+  margin: 0.5rem 0;
+  font-weight: 400;
+  color: #f0f0f0;
 }
 
 nav {
-  margin-top: 1.5rem;
+  margin-top: 1rem;
   display: flex;
   gap: 1rem;
   justify-content: center;
@@ -178,11 +176,21 @@ h2 {
   box-shadow: var(--shadow);
   border: 1px solid var(--border);
   transition: transform 0.2s ease, box-shadow 0.2s ease;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.5rem;
 }
 
 .pub-list li:hover {
   transform: translateY(-2px);
   box-shadow: 0 4px 8px rgba(0,0,0,0.4);
+}
+
+.pub-list li::after {
+  content: "·";
+  color: #999;
+  margin: 0 0.5rem;
 }
 
 .pub-title {
@@ -203,6 +211,7 @@ h2 {
   font-style: italic;
   color: #999;
   display: inline;
+  margin-right: 0.5rem;
 }
 
 .pub-list a {
@@ -267,13 +276,14 @@ footer {
 
 .contact-card {
   flex: 1;
+  min-width: 250px;
   background: var(--card-bg);
   padding: 1rem;
   border-radius: var(--radius);
   border: 1px solid var(--border);
   text-align: center;
   transition: transform 0.2s ease, box-shadow 0.2s ease;
-  word-break: break-word;
+  word-wrap: break-word;
 }
 
 .contact-card:hover {
@@ -286,7 +296,9 @@ footer {
   text-decoration: none;
   display: block;
   font-weight: 500;
-  word-break: break-all;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .contact-card a:hover {
@@ -307,9 +319,11 @@ footer {
   }
   
   .contact-card {
-    width: 100%;
-    box-sizing: border-box;
-    margin: 0;
+    min-width: 100%;
+  }
+  
+  .contact-card a {
+    white-space: normal;
   }
 }
 
