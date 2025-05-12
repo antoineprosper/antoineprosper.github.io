@@ -1,13 +1,13 @@
 :root {
-  --primary: #2d3436;
-  --text: #e4e4e4;
-  --background: #121212;
-  --accent: #0984e3;
-  --card-bg: #1e1e1e;
-  --light-gray: #2d2d2d;
+  --primary: #1a1a1a;
+  --text: #ffffff;
+  --background: #0a0a0a;
+  --accent: #4fb3ff;
+  --card-bg: #1a1a1a;
+  --light-gray: #1a1a1a;
   --border: #333333;
   --radius: 8px;
-  --shadow: 0 2px 4px rgba(0,0,0,0.2);
+  --shadow: 0 2px 4px rgba(0,0,0,0.3);
 }
 
 body {
@@ -110,11 +110,18 @@ h2 {
 }
 
 .pub-list li {
-  margin-bottom: 1rem;
-  padding: 1rem;
+  margin-bottom: 1.5rem;
+  padding: 1.5rem;
   background: var(--card-bg);
   border-radius: var(--radius);
   box-shadow: var(--shadow);
+  border: 1px solid var(--border);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.pub-list li:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.4);
 }
 
 .pub-title {
@@ -122,7 +129,7 @@ h2 {
   font-size: 1.1rem;
   color: var(--text);
   display: block;
-  margin-bottom: 0.25rem;
+  margin-bottom: 0.5rem;
 }
 
 .pub-authors {
@@ -142,12 +149,14 @@ h2 {
   text-decoration: none;
   font-weight: 500;
   transition: color 0.2s;
-  display: inline-block;
+  display: inline;
   margin-left: 0.5rem;
+  font-size: 0.9rem;
 }
 
 .pub-list a:hover {
   color: #4fb3ff;
+  text-decoration: underline;
 }
 
 .projects-grid {
