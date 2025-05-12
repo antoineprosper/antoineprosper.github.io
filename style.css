@@ -47,10 +47,10 @@ header h1 {
 
 .tagline {
   font-size: 1.1rem;
-  opacity: 0.9;
+  opacity: 1;
   margin: 0.5rem 0;
   font-weight: 400;
-  color: #f0f0f0;
+  color: #ffffff;
 }
 
 nav {
@@ -110,11 +110,16 @@ nav a:hover {
     box-sizing: border-box;
   }
 
-  h2 {
+  h2, h3 {
     text-align: center;
     border-bottom: none;
     padding-bottom: 0;
     margin-bottom: 1.5rem;
+  }
+
+  section p, .interests, .cv-entry p {
+    text-align: justify;
+    text-justify: inter-word;
   }
 }
 
