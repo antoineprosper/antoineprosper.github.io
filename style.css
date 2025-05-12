@@ -359,3 +359,54 @@ footer {
     box-sizing: border-box;
   }
 }
+
+.publications {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.publication {
+  background: var(--card-bg);
+  padding: 1.5rem;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  border: 1px solid var(--border);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.publication:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.4);
+}
+
+.pub-title {
+  font-weight: 600;
+  font-size: 1.1rem;
+  color: var(--text);
+}
+
+.pub-authors {
+  color: #999;
+}
+
+.pub-venue {
+  font-style: italic;
+  color: #999;
+}
+
+.publication a {
+  color: var(--accent);
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.2s;
+  font-size: 0.9rem;
+}
+
+.publication a:hover {
+  color: #a8d8ff;
+  text-decoration: underline;
+}
