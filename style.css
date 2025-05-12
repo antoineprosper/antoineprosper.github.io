@@ -1,6 +1,6 @@
 :root {
   /* Header and section backgrounds */
-  --primary: #171717;
+  --primary: #414141;
   /* Main text color */
   --text: #e4e4e4;
   /* Page background */
@@ -10,7 +10,7 @@
   /* Card backgrounds */
   --card-bg: #1e1e1e;
   /* Section backgrounds and footer */
-  --light-gray: #7a7a7a;
+  --light-gray: #414141;
   /* Card borders */
   --border: #333333;
   /* Border radius for cards and sections */
