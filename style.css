@@ -170,70 +170,8 @@ h2 {
   line-height: 1.4;
 }
 
-.pub-list {
-  list-style: none;
-  padding: 0;
-}
-
-.pub-list li {
-  margin-bottom: 1.5rem;
-  padding: 1.5rem;
-  background: var(--card-bg);
-  border-radius: var(--radius);
-  box-shadow: var(--shadow);
-  border: 1px solid var(--border);
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  gap: 0.5rem;
-}
-
-.pub-list li:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 4px 8px rgba(0,0,0,0.4);
-}
-
-.pub-list li::after {
-  content: "·";
-  color: #999;
-  margin: 0 0.5rem;
-}
-
-.pub-title {
-  font-weight: 600;
-  font-size: 1.1rem;
-  color: var(--text);
-  display: block;
-  margin-bottom: 0.5rem;
-}
-
-.pub-authors {
-  color: #999;
-  display: inline;
-  margin-right: 0.5rem;
-}
-
-.pub-venue {
-  font-style: italic;
-  color: #999;
-  display: inline;
-  margin-right: 0.5rem;
-}
-
-.pub-list a {
-  color: var(--accent);
-  text-decoration: none;
-  font-weight: 500;
-  transition: color 0.2s;
-  display: inline;
-  margin-left: 0.5rem;
-  font-size: 0.9rem;
-}
-
-.pub-list a:hover {
-  color: #a8d8ff;
-  text-decoration: underline;
+.pub-list, .pub-list li, .pub-list li::after {
+  display: none;
 }
 
 .projects-grid {
@@ -373,9 +311,6 @@ footer {
   box-shadow: var(--shadow);
   border: 1px solid var(--border);
   transition: transform 0.2s ease, box-shadow 0.2s ease;
-  display: flex;
-  flex-direction: column;
-  gap: 0.5rem;
 }
 
 .publication:hover {
@@ -387,15 +322,21 @@ footer {
   font-weight: 600;
   font-size: 1.1rem;
   color: var(--text);
+  display: block;
+  margin-bottom: 0.5rem;
 }
 
 .pub-authors {
   color: #999;
+  display: block;
+  margin-bottom: 0.5rem;
 }
 
 .pub-venue {
   font-style: italic;
   color: #999;
+  display: block;
+  margin-bottom: 0.5rem;
 }
 
 .publication a {
