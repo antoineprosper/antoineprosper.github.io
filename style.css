@@ -144,6 +144,14 @@ h2 {
   margin: 0 0 1rem 0;
   font-size: 1.6rem;
   font-weight: 600;
+  text-align: center;
+}
+
+h3 {
+  margin: 0;
+  font-size: 1.1rem;
+  color: var(--text);
+  text-align: left;
 }
 
 .cv-entry {
@@ -351,9 +359,19 @@ footer {
   font-weight: 500;
   transition: color 0.2s;
   font-size: 0.9rem;
+  word-break: break-all;
+  display: block;
+  max-width: 100%;
+  overflow-wrap: break-word;
 }
 
-.publication a:hover {
-  color: #a8d8ff;
-  text-decoration: underline;
+@media (max-width: 600px) {
+  .publication {
+    padding: 1rem;
+  }
+  
+  .publication a {
+    white-space: normal;
+    word-break: break-word;
+  }
 }
