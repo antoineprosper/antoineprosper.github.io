@@ -1,108 +1,195 @@
 :root {
-  --primary: #005f99;
-  --light: #f5f7fa;
-  --dark: #1e1e1e;
-  --radius: 0.5rem;
-}
-
-* {
-  box-sizing: border-box;
+  --primary: #2d3436;
+  --text: #2d3436;
+  --background: #ffffff;
+  --accent: #0984e3;
+  --light-gray: #f8f9fa;
+  --border: #e9ecef;
+  --radius: 12px;
+  --shadow: 0 2px 4px rgba(0,0,0,0.05);
 }
 
 body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  line-height: 1.7;
+  color: var(--text);
+  background: var(--background);
   margin: 0;
-  font-family: system-ui, sans-serif;
-  line-height: 1.6;
-  color: var(--dark);
-  background: var(--light);
+  padding: 0;
+  font-size: 16px;
 }
 
 header {
   background: var(--primary);
-  color: #fff;
-  padding: 2rem 1rem;
+  color: white;
+  padding: 3rem 2rem;
   text-align: center;
+  border-radius: 0 0 var(--radius) var(--radius);
+  box-shadow: var(--shadow);
 }
 
-header nav {
-  margin-top: 1rem;
-}
-
-header nav a {
-  color: #fff;
-  margin: 0 0.5rem;
-  text-decoration: none;
-  font-weight: 500;
-}
-
-header nav a:hover {
-  text-decoration: underline;
+header h1 {
+  margin: 0;
+  font-size: 2.5rem;
+  font-weight: 700;
+  letter-spacing: -0.5px;
 }
 
 .tagline {
-  margin-top: 0.5rem;
-  font-size: 1.25rem;
-  font-weight: 300;
+  font-size: 1.2rem;
+  opacity: 0.9;
+  margin: 0.5rem 0;
+  font-weight: 400;
+}
+
+nav {
+  margin-top: 1.5rem;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 1rem;
+  opacity: 0.8;
+  transition: opacity 0.2s;
+  font-weight: 500;
+}
+
+nav a:hover {
+  opacity: 1;
 }
 
 main {
-  max-width: 900px;
-  margin: auto;
-  padding: 1rem;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem;
 }
 
 section {
-  margin-bottom: 3rem;
+  margin-bottom: 4rem;
+  background: var(--light-gray);
+  padding: 2rem;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
 }
 
 h2 {
-  border-bottom: 2px solid var(--primary);
-  padding-bottom: 0.25rem;
+  color: var(--primary);
+  border-bottom: 2px solid var(--accent);
+  padding-bottom: 0.5rem;
+  margin-bottom: 1.5rem;
+  font-size: 1.8rem;
+  font-weight: 600;
 }
 
-.cv-entry, .project-card {
-  background: #fff;
-  padding: 1rem;
+.cv-entry {
+  margin-bottom: 2rem;
+  padding: 1.5rem;
+  background: white;
   border-radius: var(--radius);
-  margin-bottom: 1rem;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+  box-shadow: var(--shadow);
+}
+
+.cv-entry h3 {
+  margin: 0 0 0.5rem 0;
+  color: var(--primary);
+  font-size: 1.2rem;
 }
 
 .cv-dates {
+  color: #666;
   font-size: 0.9rem;
-  color: gray;
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.pub-list {
+  list-style: none;
+  padding: 0;
+}
+
+.pub-list li {
+  margin-bottom: 2rem;
+  padding: 1.5rem;
+  background: white;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+}
+
+.pub-title {
+  font-weight: 600;
+  font-size: 1.1rem;
+  color: var(--primary);
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.pub-authors {
+  color: #666;
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.pub-venue {
+  font-style: italic;
+  color: #666;
+  display: inline-block;
+  margin-right: 1rem;
+}
+
+.pub-list a {
+  color: var(--accent);
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.2s;
+}
+
+.pub-list a:hover {
+  color: #0769b3;
 }
 
 .projects-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
-  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+  margin-top: 1.5rem;
 }
 
-.project-card a {
-  display: inline-block;
-  margin-right: 0.5rem;
-  margin-top: 0.5rem;
+.project-card {
+  background: white;
+  padding: 1.5rem;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+}
+
+.project-card h3 {
+  margin-top: 0;
   color: var(--primary);
 }
 
 footer {
-  background: #eceff1;
   text-align: center;
-  padding: 1rem;
-  font-size: 0.9rem;
+  padding: 2rem;
+  background: var(--light-gray);
+  margin-top: 3rem;
+  border-radius: var(--radius) var(--radius) 0 0;
 }
 
-@media (prefers-color-scheme: dark) {
-  body {
-    color: #e4e4e4;
-    background: #121212;
-  }
+@media (max-width: 600px) {
   header {
-    background: #0a3d63;
+    padding: 2rem 1rem;
   }
-  section, .cv-entry, .project-card {
-    background: #1e1e1e;
+  
+  nav a {
+    display: block;
+    margin: 0.5rem 0;
   }
-  a { color: #4fb3ff; }
+  
+  main {
+    padding: 1rem;
+  }
+  
+  section {
+    padding: 1.5rem;
+  }
 }
