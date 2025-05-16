@@ -154,6 +154,10 @@ h3 {
   text-align: left;
 }
 
+.centered-title {
+  text-align: center;
+}
+
 .cv-entry {
   margin-bottom: 1.5rem;
   padding: 1.5rem;
